@@ -1,0 +1,74 @@
+.moviePoster {
+  margin: 0.5rem;
+  border: solid .5px black;
+  border-radius: 10px;
+  background-color: rgb(3, 43, 28);
+}
+
+.moviePoster img {
+  height: 40vh;
+  border-top-right-radius: 10px;
+  border-top-left-radius: 10px;
+  cursor: pointer;
+}
+
+.moviePoster img:hover {
+  transition: transform 0.3s ease-in-out;
+  transform: scale(1.025);
+}
+
+.poster_button{
+  margin: 0;
+  padding: 0;
+  background-color: transparent;
+  border-top-right-radius: 10px;
+  border-top-left-radius: 10px;
+}
+
+.moviePoster p {
+  margin: .9rem;
+  color: white;
+  font-size: 1.9vh;
+  font-weight: bold;
+}
+
+.downvote, .upvote {
+  font-size: 2.3vw;
+  margin: 0.9rem;
+  padding: .2rem;
+  border: none;
+  cursor: pointer;
+  appearance: none;
+  background-color: inherit;
+  transition: transform 0.7s ease-in-out;
+}
+
+.downvote:hover {
+    transform: rotate(360deg);
+  }
+
+.upvote:hover {
+  transform: rotate(-360deg);
+}  
+
+.upvote:active {
+    transition: background-color 0.1s ease-in-out;
+    background-color: rgb(144, 189, 160);
+    border-radius: 15px;
+}
+
+.downvote:active {
+  transition: background-color 0.1s ease-in-out;
+  background-color: rgb(214, 138, 138);
+  border-radius: 15px;
+}
+
+.voting {
+  display: flex;
+  justify-content: center;
+    align-items: center;
+}
+
+.voting_img {
+  object-fit: fill;
+}
